@@ -1,0 +1,13 @@
+.swiper-card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important; /* Adjust shadow properties as needed */
+  border-radius: 8px !important; /* Adjust border radius as needed */
+  transition: box-shadow 0.3s ease !important; /* Add transition for smooth hover effect */
+}
+
+.swiper-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2) !important; /* Adjust shadow properties on hover */
+}
+
+.developer-slide{
+  width:0;
+}

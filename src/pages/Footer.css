@@ -1,0 +1,69 @@
+.footer-logo{
+    width:12rem;
+}
+
+.footer-wrap{
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    justify-content: space-around !important;
+
+}
+.link-wrapper{
+    display: flex;
+    gap: 1rem;
+    
+}
+
+
+
+.link-primary {
+    color:#27262e !important;
+}
+.rera{
+    color:#27262e;
+    text-align: center;
+}
+.footer-wrap1{
+    flex-direction: column !important;
+    padding-top: 1rem !important;
+    padding-bottom: 0rem !important;
+}
+
+.inspiraText{
+    padding-top:0  !important;
+    text-align: center !important;
+
+}
+
+.inspira{
+
+    text-align: center;
+    
+}
+
+@media (max-width: 992px) {
+
+.footer-wrap{
+    display: flex !important;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+
+}
+.footer-logo{
+    width:7rem;
+    height:2.5rem;
+}
+.link-wrapper{
+    display: none;
+
+}
+.rera{
+    text-align: center;
+    font-size: 0.8rem !important;
+}
+.subscribe .container::after{
+    display: none;
+}
+}

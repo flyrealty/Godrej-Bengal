@@ -1,0 +1,159 @@
+.aboutContent {
+  margin-top: 5rem;
+}
+.formm {
+  margin-left: 2rem;
+  width: 77%;
+}
+
+.submit--btn {
+  width: 100% !important;
+  display: flex;
+  justify-content: center; /* Horizontally center the content */
+  align-items: center; /* Vertically center the content */
+  margin-top: 2rem ;
+  margin-bottom: 2rem;  
+}
+.submitButtonStyle{
+  margin-bottom: 1rem !important;
+}
+
+.contact-form {
+  justify-content: center !important;
+  height: 25rem;
+}
+
+.about-header1 {
+  margin-left: 4rem;
+}
+
+.about-us-container {
+  display: flex;
+  margin-top: 8rem;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
+
+
+.about-us {
+  display: flex;
+  width: 20%;
+  justify-content: center;
+  flex-direction: row;
+  font-size: 31px;
+  color: white;
+  padding: 1rem 2rem;
+  background-color: #0c1d3c;
+  border-radius: 1rem;
+}
+
+.contact-form-wrapper {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.contactForm {
+  display: flex;
+  width: 100%;
+  max-width: 60rem;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px;
+  flex-direction: column-reverse;
+  align-content: space-between;
+  align-items: stretch;
+  margin-top: 8rem;
+}
+
+.aboutText {
+  display: flex;
+  width: 100%;
+  color: #0c1d3c;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.about-text {
+  text-align: center;
+}
+
+.about-text1 {
+  text-align: center;
+}
+
+
+@media only screen and (max-width: 768px) {
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+  .submit--btn {
+    width: 6rem !important;
+    
+  
+  }
+
+  .inputt {
+    margin-left: 15px !important;
+  }
+
+  .contactForm {
+    width: 78%;
+    margin-top: 6rem;
+  }
+
+  .contact-form-wrapper {
+    width: 100%;
+    margin-top: -2rem;
+  }
+
+  .submitt-btn {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+   
+  }
+  .contactTitle {
+    margin-bottom: 9rem;
+  }
+
+  .aboutText {
+    width: 100%;
+    margin-left: -2rem;
+  }
+  .col-xs-12 {
+    width: 92%;
+    margin-top: 4rem;
+  }
+
+  .h1inspira {
+    margin-left: -4rem;
+  }
+
+  .contact-us {
+    margin-left: 2rem;
+  }
+
+  .about-us-container {
+    display: flex;
+    margin-top: 3rem;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .about-us {
+    width: 38%;
+    font-size: 16px;
+    margin-left: 1rem;
+  }
+}
