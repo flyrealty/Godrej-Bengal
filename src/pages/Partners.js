@@ -42,19 +42,19 @@ function Partners() {
             animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : -1000 }} // Move to the center
             transition={{ duration: 0.8, delay: index * 0.1 }}
           >
-          {images
-            .slice(index * numImages, (index + 1) * numImages)
-            .map((image, i) => (
-              <motion.img
-                key={i}
-                className="photo1" 
-                src={image}
-                alt={`Layer ${index * numImages + i + 1}`}
-                initial={{ opacity: 0, x: -1000 }} 
-                animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : -1000 }} 
-                transition={{ duration: 0.8, delay: i * 0.1 }}
-              />
-            ))}
+            {images
+              .slice(index * numImages, (index + 1) * numImages)
+              .map((image, i) => (
+                <motion.img
+                  key={i}
+                  className="photo1"
+                  src={image}
+                  alt={`Layer ${index * numImages + i + 1}`}
+                  initial={{ opacity: 0, x: -1000 }}
+                  animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : -1000 }}
+                  transition={{ duration: 0.8, delay: i * 0.1 }}
+                />
+              ))}
           </motion.div>
         )
       )}

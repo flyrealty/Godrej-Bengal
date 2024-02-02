@@ -1,6 +1,6 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
+
 import Navbar from "react-bootstrap/Navbar";
 import logo from "../../images/logo/logo.png";
 import { Button } from "react-bootstrap";
@@ -23,14 +23,11 @@ function NavBar() {
         <div className="d-flex align-items-center order">
           <span className="line d-lg-inline-block d-none"></span>
           <Button
-          className="btn-primary1-CTA d-none d-lg-inline-block"
-          onClick={handleCallButtonClick}
-        >
-          <IoCall /> &nbsp; 9874561230
-        </Button>
-       
-        
-        
+            className="btn-primary1-CTA d-none d-lg-inline-block"
+            onClick={handleCallButtonClick}
+          >
+            <IoCall /> &nbsp; 9874561230
+          </Button>
         </div>
       </Container>
     </Navbar>

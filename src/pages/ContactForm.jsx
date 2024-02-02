@@ -5,7 +5,6 @@ import Thanks from "./Thanks";
 import "./Subscribe.css";
 import "./ContactForm.css";
 
-
 function ContactForm() {
   const [formData, setFormData] = useState({
     Name: "",
@@ -119,8 +118,6 @@ function ContactForm() {
     color: "white",
     border: "1px solid #27262e ",
   };
-
-
 
   return (
     <div className="subscribe1">

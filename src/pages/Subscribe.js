@@ -125,7 +125,6 @@ function Subscribe() {
     padding: "5px",
     cursor: "pointer",
     color: "white",
- 
   };
 
   return (

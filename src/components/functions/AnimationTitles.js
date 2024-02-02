@@ -1,6 +1,6 @@
-import {motion} from "framer-motion"
+import { motion } from "framer-motion";
 
-function AnimationTitles({title, className}) {
+function AnimationTitles({ title, className }) {
   const hVariants = {
     hidden: {
       opacity: 0,
@@ -22,20 +22,20 @@ function AnimationTitles({title, className}) {
     },
   };
 
-  return(
+  return (
     <motion.h1
-    variants={hVariants}
-    initial="hidden"
-    whileInView="visible"
-    className={className}
-  >
-    {title.split("").map((char, index) => (
-      <motion.span variants={spanVariants} key={index}>
-        {char}
-      </motion.span>
-    ))}
-  </motion.h1>
-  )
+      variants={hVariants}
+      initial="hidden"
+      whileInView="visible"
+      className={className}
+    >
+      {title.split("").map((char, index) => (
+        <motion.span variants={spanVariants} key={index}>
+          {char}
+        </motion.span>
+      ))}
+    </motion.h1>
+  );
 }
 
-export default AnimationTitles
+export default AnimationTitles;

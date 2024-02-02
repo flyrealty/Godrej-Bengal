@@ -1,4 +1,3 @@
-
 import { Card, Container } from "react-bootstrap";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -7,15 +6,11 @@ import "swiper/css/navigation";
 import { Pagination, Navigation } from "swiper/modules";
 import { motion } from "framer-motion";
 import AnimationTitles from "../components/functions/AnimationTitles";
-import "./Properties.css"
+import "./Properties.css";
 
 function Properties() {
   // Active on select a tab
-  function active(e) {
-    let act = document.querySelectorAll(".active");
-    act[0].classList.remove("active");
-    e.target.classList.add("active");
-  }
+
 
   // Like button of properties
   function like(e) {
@@ -28,10 +23,7 @@ function Properties() {
     // Start properties
     <div className="properties">
       <Container>
-        <AnimationTitles
-          className="title mx-auto"
-          title="Elevation Gallery"
-        />
+        <AnimationTitles className="title mx-auto" title="Elevation Gallery" />
         {/* Start tabs */}
         <div className="tabs d-flex justify-content-start justify-content-sm-center align-items-center flex-nowrap w-lg-50">
           <Swiper
@@ -47,12 +39,9 @@ function Properties() {
                 slidesPerView: 6,
               },
             }}
-          >
-          
-          </Swiper>
+          ></Swiper>
         </div>
-        {/* End tabs */}
-        {/* Start cards */}
+  
         <motion.div
           initial={{ x: -80 }}
           whileInView={{ x: 0 }}
@@ -100,87 +89,6 @@ function Properties() {
                     />
                     <i className="fa-regular fa-heart like" onClick={like}></i>
                   </div>
-                 
-                </Card.Body>
-              </Card>
-            </SwiperSlide>
-            <SwiperSlide>
-            {" "}
-            <Card className="bg-black-100 rounded">
-              <Card.Body className="p-2">
-                <div className="rounded overflow-hidden position-relative">
-                  <Card.Img
-                    variant="top"
-                    alt="img"
-                    src={require("../images/properties/build1.jpg")}
-                  />
-                  <i className="fa-regular fa-heart like" onClick={like}></i>
-                </div>
-               
-              </Card.Body>
-            </Card>
-          </SwiperSlide>
-          <SwiperSlide>
-              {" "}
-              <Card className="bg-black-100 rounded">
-                <Card.Body className="p-2">
-                  <div className="rounded overflow-hidden position-relative">
-                    <Card.Img
-                      variant="top"
-                      alt="img"
-                      src={require("../images/properties/build2.jpg")}
-                    />
-                    <i className="fa-regular fa-heart like" onClick={like}></i>
-                  </div>
-                 
-                </Card.Body>
-              </Card>
-            </SwiperSlide>
-            <SwiperSlide>
-              {" "}
-              <Card className="bg-black-100 rounded">
-                <Card.Body className="p-2">
-                  <div className="rounded overflow-hidden position-relative">
-                    <Card.Img
-                      variant="top"
-                      alt="img"
-                      src={require("../images/properties/build3.jpg")}
-                    />
-                    <i className="fa-regular fa-heart like" onClick={like}></i>
-                  </div>
-                 
-                </Card.Body>
-              </Card>
-            </SwiperSlide>
-            <SwiperSlide>
-              {" "}
-              <Card className="bg-black-100 rounded">
-                <Card.Body className="p-2">
-                  <div className="rounded overflow-hidden position-relative">
-                    <Card.Img
-                      variant="top"
-                      alt="img"
-                      src={require("../images/properties/build4.jpg")}
-                    />
-                    <i className="fa-regular fa-heart like" onClick={like}></i>
-                  </div>
-                 
-                </Card.Body>
-              </Card>
-            </SwiperSlide>
-            <SwiperSlide>
-              {" "}
-              <Card className="bg-black-100 rounded">
-                <Card.Body className="p-2">
-                  <div className="rounded overflow-hidden position-relative">
-                    <Card.Img
-                      variant="top"
-                      alt="img"
-                      src={require("../images/properties/build.jpg")}
-                    />
-                    <i className="fa-regular fa-heart like" onClick={like}></i>
-                  </div>
-                 
                 </Card.Body>
               </Card>
             </SwiperSlide>
@@ -196,7 +104,6 @@ function Properties() {
                     />
                     <i className="fa-regular fa-heart like" onClick={like}></i>
                   </div>
-                 
                 </Card.Body>
               </Card>
             </SwiperSlide>
@@ -212,7 +119,81 @@ function Properties() {
                     />
                     <i className="fa-regular fa-heart like" onClick={like}></i>
                   </div>
-                 
+                </Card.Body>
+              </Card>
+            </SwiperSlide>
+            <SwiperSlide>
+              {" "}
+              <Card className="bg-black-100 rounded">
+                <Card.Body className="p-2">
+                  <div className="rounded overflow-hidden position-relative">
+                    <Card.Img
+                      variant="top"
+                      alt="img"
+                      src={require("../images/properties/build3.jpg")}
+                    />
+                    <i className="fa-regular fa-heart like" onClick={like}></i>
+                  </div>
+                </Card.Body>
+              </Card>
+            </SwiperSlide>
+            <SwiperSlide>
+              {" "}
+              <Card className="bg-black-100 rounded">
+                <Card.Body className="p-2">
+                  <div className="rounded overflow-hidden position-relative">
+                    <Card.Img
+                      variant="top"
+                      alt="img"
+                      src={require("../images/properties/build4.jpg")}
+                    />
+                    <i className="fa-regular fa-heart like" onClick={like}></i>
+                  </div>
+                </Card.Body>
+              </Card>
+            </SwiperSlide>
+            <SwiperSlide>
+              {" "}
+              <Card className="bg-black-100 rounded">
+                <Card.Body className="p-2">
+                  <div className="rounded overflow-hidden position-relative">
+                    <Card.Img
+                      variant="top"
+                      alt="img"
+                      src={require("../images/properties/build.jpg")}
+                    />
+                    <i className="fa-regular fa-heart like" onClick={like}></i>
+                  </div>
+                </Card.Body>
+              </Card>
+            </SwiperSlide>
+            <SwiperSlide>
+              {" "}
+              <Card className="bg-black-100 rounded">
+                <Card.Body className="p-2">
+                  <div className="rounded overflow-hidden position-relative">
+                    <Card.Img
+                      variant="top"
+                      alt="img"
+                      src={require("../images/properties/build1.jpg")}
+                    />
+                    <i className="fa-regular fa-heart like" onClick={like}></i>
+                  </div>
+                </Card.Body>
+              </Card>
+            </SwiperSlide>
+            <SwiperSlide>
+              {" "}
+              <Card className="bg-black-100 rounded">
+                <Card.Body className="p-2">
+                  <div className="rounded overflow-hidden position-relative">
+                    <Card.Img
+                      variant="top"
+                      alt="img"
+                      src={require("../images/properties/build2.jpg")}
+                    />
+                    <i className="fa-regular fa-heart like" onClick={like}></i>
+                  </div>
                 </Card.Body>
               </Card>
             </SwiperSlide>

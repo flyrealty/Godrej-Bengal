@@ -40,11 +40,6 @@ function Loading() {
     };
   }, []);
 
-  // Function to toggle contact form visibility
-  const toggleContactForm = () => {
-    setShowContactForm(!showContactForm);
-  };
-
   return (
     <div className="loading position-relative">
       <div className="banner-container">
@@ -85,9 +80,9 @@ function Loading() {
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, x: 400 }} 
-          animate={{ opacity: 1, x: 0 }} 
-          transition={{ duration: 0.8 }} 
+          initial={{ opacity: 0, x: 400 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
           className="w-100 my-5"
         >
           <div className="cards">

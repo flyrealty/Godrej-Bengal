@@ -20,23 +20,27 @@ function Footer() {
               className="footer-logo"
             />
             <div className="link-wrapper">
-            <Link
-              className="link-primary link-underline-opacity-0"
-              to={"https://www.inspirabuilders.com/disclaimer-inspirabuilders/"}
-            >
-              Disclaimer
-            </Link>
-            <br />
-            <Link
-              className="link-primary link-underline-opacity-0"
-              to={"https://www.inspirabuilders.com/privacy-policy/"}
-            >
-              Privacy Policy
-            </Link>
+              <Link
+                className="link-primary link-underline-opacity-0"
+                to={
+                  "https://www.inspirabuilders.com/disclaimer-inspirabuilders/"
+                }
+              >
+                Disclaimer
+              </Link>
+              <br />
+              <Link
+                className="link-primary link-underline-opacity-0"
+                to={"https://www.inspirabuilders.com/privacy-policy/"}
+              >
+                Privacy Policy
+              </Link>
             </div>
-            <p  className="rera">
-            <b>RERA No. : </b> ACK/KA/RERA/1251/446/<br/>PR/250124/007806{" "}
-          </p>
+            <p className="rera">
+              <b>RERA No. : </b> ACK/KA/RERA/1251/446/
+              <br />
+              PR/250124/007806{" "}
+            </p>
           </motion.div>
           <span className="d-block d-md-none"></span>
           <motion.div
@@ -55,8 +59,7 @@ function Footer() {
           transition={{ duration: 0.8 }}
           className=" inspiraText   flex-column flex-md-row flex-wrap gray-100 pt-3"
         >
-          <p>Copyright © 2023 Godrej Properties
-          </p>
+          <p>Copyright © 2023 Godrej Properties</p>
         </motion.div>
       </Container>
     </footer>
